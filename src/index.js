@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/Root.jsx";
+import Layout from "./routes/Layout.jsx";
 import Token from "./routes/Token.jsx";
+import Home from "./routes/Home.jsx";
 import Profile from "./routes/Profile.jsx";
 import NoPage from "./routes/NoPage.jsx";
 import ErrorPage from "./Error.jsx";
@@ -13,9 +14,13 @@ import ErrorPage from "./Error.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        index: true,
+        element: <Home />,
+      },
       {
         path: "token",
         element: <Token />,

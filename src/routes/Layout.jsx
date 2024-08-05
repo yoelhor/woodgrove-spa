@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
-const Root = () => {
+const Layout = () => {
     return <>
         <div id="sidebar">
             {/* other elements */}
@@ -23,4 +23,4 @@ const Root = () => {
     </>;
 };
 
-export default Root;
+export default Layout;
