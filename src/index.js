@@ -4,11 +4,11 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./routes/Layout.jsx";
-import Token from "./routes/Token.jsx";
-import Home from "./routes/Home.jsx";
-import Profile from "./routes/Profile.jsx";
-import NoPage from "./routes/NoPage.jsx";
+import Layout from "./pages/Layout.jsx";
+import Token from "./pages/Token.jsx";
+import Home from "./pages/Home.jsx";
+import Profile from "./pages/Profile.jsx";
+import NoPage from "./pages/NoPage.jsx";
 import ErrorPage from "./Error.jsx";
 
 

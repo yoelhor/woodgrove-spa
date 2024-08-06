@@ -36,10 +36,10 @@ export const msalConfig = {
                         console.error(message);
                         return;
                     case LogLevel.Info:
-                        console.info(message);
+                        //console.info(message);
                         return;
                     case LogLevel.Verbose:
-                        console.debug(message);
+                        //console.debug(message);
                         return;
                     case LogLevel.Warning:
                         console.warn(message);
@@ -52,6 +52,7 @@ export const msalConfig = {
     },
 };
 
+
 /**
  * Add here the endpoints and scopes when obtaining an access token for protected web APIs. For more information, see:
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
@@ -62,6 +63,13 @@ export const protectedResources = {
         scopes: {
             read: ['api://wggdemo.onmicrosoft.com/groceries-downstream-api/Payment.Read'],
             write: ['api://wggdemo.onmicrosoft.com/groceries-downstream-api/Payment.ReadWrite'],
+        },
+    },
+    microsoftGraph: {
+        endpoint: 'https://graph.microsoft.com/v1.0/me',
+        scopes: {
+            read: ['https://graph.microsoft.com/User.Read'],
+            write: ['https://graph.microsoft.com/User.ReadWrite'],
         },
     },
 };
