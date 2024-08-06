@@ -99,7 +99,7 @@ const useFetchWithMsal = (msalRequest) => {
         isLoading,
         error,
         data,
-        execute: useCallback(execute, [result]), // to avoid infinite calls when inside a `useEffect`
+        execute: useCallback(execute, [null]), // to avoid infinite calls when inside a `useEffect`
     };
 };
 
